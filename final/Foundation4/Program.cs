@@ -4,23 +4,23 @@ class Program
 {
     static void Main(string[] args)
     {
-        List<Exercise> exerciseList = new List<Exercise>();
+        List<Activity> activityList = new List<Activity>();
         
         Running running = new Running("July 15, 2023", 30, 4.8);
-        exerciseList.Add(running);
+        activityList.Add(running);
 
         StationaryBicycles stationaryBicycles = new StationaryBicycles("July 17, 2023", 60, 15);
-        exerciseList.Add(stationaryBicycles);
+        activityList.Add(stationaryBicycles);
 
         Swimming swimming = new Swimming("July 24, 2023", 20, 20);
-        exerciseList.Add(swimming);
+        activityList.Add(swimming);
 
-        Console.WriteLine("Exercises:");
+        Console.WriteLine("Activity:");
         Console.WriteLine();
 
-        foreach (Exercise exercise in exerciseList) 
+        foreach (Activity activity in activityList) 
         {
-            Console.WriteLine(exercise.GetSummary());
+            Console.WriteLine(activity.GetSummary());
         }
     }
 }
